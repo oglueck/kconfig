@@ -5,6 +5,19 @@ I regularly publish default configuration of the Linux kernel for popular and mo
 
 [Details](https://www.odi.ch/prog/kernel-config.php) on all current kernel options.
 
+## Assumptions
+For these ready-made kernels the following assumptions were made:
+* VHOST: KVM is enabled to host virtual machines with QEmu
+* VGUEST: no VM guest support
+* SEC: most security relevant options have been enabled, except CPU vulnerability mitigations since they are not relevant in practice IMHO and only kill performance
+* OLD: deprecated and obsolete options are mostly disabled
+* COMPAT: options are mostly enabled
+* DEV: development and debugging options are disabled
+* Intel, nNvidia and AMD graphic are all enabled
+* Intel sound is enabled
+* Compiled for the _local_ CPU (X86_NATIVE_CPU) (not generic x86!)
+* The kernel can be used as a crash-kernel as well
+
 
 ## Archive By Kernel Version
 The archive contains each a `defconfig` file and a `config` file. 
