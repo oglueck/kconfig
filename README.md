@@ -37,3 +37,4 @@ after that customize your config as usual: `make menuconfig`
 
 ## Versions
 * [6.18](x86_64/v6.18/)
+* [6.19](x86_64/v6.19/)
